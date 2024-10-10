@@ -1,13 +1,15 @@
 # Koinx Assessment - Node.js, Expres js & MongoDB
-This project is a Node.js application that fetches cryptocurrency data (price, market cap, and 24-hour change) only for Bitcoin, Matic, and Ethereum using CoinGecko API and stores it in a MongoDB database. The data is updated every 2 hours through a cron job. It also provides APIs to fetch the latest cryptocurrency data and calculate the standard deviation of the price over the last 100 records.
+##### This project is a Node.js application that fetches cryptocurrency data (price, market cap, and 24-hour change) only for Bitcoin, Matic, and Ethereum using CoinGecko API and stores it in a MongoDB database. The data is updated every 2 hours through a cron job. It also provides APIs to fetch the latest cryptocurrency data and calculate the standard deviation of the price over the last 100 records.
+
 ==================================================
 ## Features
 
 - Fetches cryptocurrency data for Bitcoin, Matic, and Ethereum every 2 hours using a cron job.
 
--Provides APIs to:
+- Provides APIs to:
     - Get the latest price, market cap, and 24-hour change for a cryptocurrency.
     - Calculate the standard deviation of the price for the last 100 records of a cryptocurrency.
+      
 ===================================================
 ## API Endpoints
 
@@ -98,9 +100,9 @@ This data is stored in MongoDB under the appropriate cryptocurrency collection.
 ### Getting Started
 
 * Prerequisites 
-Node.js (v14 or higher)
-MongoDB (Local or MongoDB Atlas)
-CoinGecko API (no authentication required)
+- Node.js (v14 or higher)
+- MongoDB (Local or MongoDB Atlas)
+- CoinGecko API (no authentication required)
 
 Installation
 Clone the repository:
@@ -159,7 +161,11 @@ Make sure to revert it to run every 2 hours after testing.
 =====================================================
 
 ### Dependencies
-Express.js - Web framework for Node.js
-Mongoose - MongoDB object modeling tool
-Node-cron - Task scheduling module
-CoinGecko API - API for cryptocurrency prices
+- express - Web framework for Node.js
+- mongoose - MongoDB object modeling tool
+- node-cron - Task scheduling module
+- CoinGecko API - API for cryptocurrency prices
+- color - for debugginh / highlighting terminal
+- morgan - api hits url with status code
+- dotenv - for env configuration
+- axios - fetching data from api's
