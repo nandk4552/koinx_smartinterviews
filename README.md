@@ -1,4 +1,11 @@
 # Koinx Assessment - Node.js, Expres js & MongoDB
+
+DEPLOYED LINK ON RENDER: ```https://si-koinx.onrender.com/```
+
+POSTMAN API's: ```https://elements.getpostman.com/redirect?entityId=21207467-dd75f64f-89f4-464d-a3a8-9e814f4eefd7&entityType=collection```
+
+GITHUB LINK: ```https://github.com/nandk4552/si_koinx```
+
 ##### This project is a Node.js application that fetches cryptocurrency data (price, market cap, and 24-hour change) only for Bitcoin, Matic, and Ethereum using CoinGecko API and stores it in a MongoDB database. The data is updated every 2 hours through a cron job. It also provides APIs to fetch the latest cryptocurrency data and calculate the standard deviation of the price over the last 100 records.
 
 ==================================================
